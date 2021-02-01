@@ -7,7 +7,7 @@ const postSchema = new mongoose.Schema({
     creator: {
         type: String
     },
-    messages: {
+    message: {
         type: String
     }
     ,
@@ -20,10 +20,8 @@ const postSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     }
-    ,
-    messages: {
-        type: String
-    }
+    
+    
 
 }, { timestamps: true });
 
