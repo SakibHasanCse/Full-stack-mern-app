@@ -32,6 +32,7 @@ export const getPosts = async (req, res, next) => {
     try {
 
         await Post.find((err, post) => {
+            console.log(post)
             if (err) {
                 return res.status(400).json({
                     message: err.message,
